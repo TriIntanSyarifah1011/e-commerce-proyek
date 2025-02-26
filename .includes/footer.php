@@ -10,7 +10,11 @@
                   All rights reserved.
                 </div>
                 <div>
+<<<<<<< HEAD
                   <a href="#" target="_blank" class="footer-link me-4">TIM E-COMMERCE</a>
+=======
+                  <a href="#" target="_blank" class="footer-link me-4">TIM RPL SMKN 4 Tanjungpinang</a>
+>>>>>>> 50f7c452591da264ad053702564568bdfde6b38e
                 </div>
               </div>
             </footer>

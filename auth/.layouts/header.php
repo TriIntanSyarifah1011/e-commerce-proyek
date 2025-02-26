@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 session_start(); //inisialisasi Session
 // Ambil notifikasi jika ada, kemudian hapus dari sesi
@@ -18,6 +19,8 @@ if (isset($_SESSION["username"]) || isset($_SESSION["role"])) {
 }
 ?>
 
+=======
+>>>>>>> 50f7c452591da264ad053702564568bdfde6b38e
 <!DOCTYPE html>
 <html lang="en">
   <head>

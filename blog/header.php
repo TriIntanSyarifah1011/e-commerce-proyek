@@ -3,7 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<<<<<<< HEAD
   <title>Blog &mdash; E-commerce</title>
+=======
+  <title>Blog &mdash; IdeKreatif</title>
+>>>>>>> 50f7c452591da264ad053702564568bdfde6b38e
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">

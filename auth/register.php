@@ -6,7 +6,11 @@
     <div class="app-brand justify-content-center">
       <a href="index.html" class="app-brand-link gap-2">
         <span class="app-brand-logo demo"></span>
+<<<<<<< HEAD
         <span class="app-brand-text demo text-uppercase fw-bolder">E-commerce</span>
+=======
+        <span class="app-brand-text demo text-uppercase fw-bolder">IdeKreatif</span>
+>>>>>>> 50f7c452591da264ad053702564568bdfde6b38e
       </a>
     </div>
     <!-- /Logo -->
