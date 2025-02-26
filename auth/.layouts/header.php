@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 session_start(); //inisialisasi Session
 // Ambil notifikasi jika ada, kemudian hapus dari sesi
@@ -19,14 +18,12 @@ if (isset($_SESSION["username"]) || isset($_SESSION["role"])) {
 }
 ?>
 
-=======
->>>>>>> 50f7c452591da264ad053702564568bdfde6b38e
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-    <title>IdeKreatif</title>
+    <title>E-commerce</title>
     <meta name="description" content="" />
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />

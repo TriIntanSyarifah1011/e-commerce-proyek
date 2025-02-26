@@ -13,11 +13,7 @@ include "init_session.php";
     initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-<<<<<<< HEAD
     <title>Dashboard &mdash; E-commerce</title>
-=======
-    <title>Dashboard &mdash; IdeKreatif</title>
->>>>>>> 50f7c452591da264ad053702564568bdfde6b38e
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
     <!-- Fonts -->
