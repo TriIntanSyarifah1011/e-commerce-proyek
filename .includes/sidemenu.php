@@ -37,15 +37,7 @@
       <ul class="menu-sub">
         <li class="menu-item">
           <a href="posts.php" class="menu-link">
-            <div data-i18n="Basic Inputs">Post Produk</div>
-          </a>
-        </li>
-      </ul>
-
-      <ul class="menu-sub">
-        <li class="menu-item">
-          <a href="posts.php" class="menu-link">
-            <div data-i18n="Basic Inputs">Pelanggan</div>
+            <div data-i18n="Basic Inputs">Post Kategori</div>
           </a>
         </li>
       </ul>
@@ -75,4 +67,3 @@
 
 </aside>
 <!-- / Menu -->
- 
