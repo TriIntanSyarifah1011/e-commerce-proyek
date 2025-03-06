@@ -33,7 +33,7 @@ include '.includes/toast_notification.php';
 $index = 1; // Variabel untuk nomor urut
 
 // Query untuk mengambil data dari tabel produk dan kategori
-$query = "SELECT produk.namaProduk, produk.harga, produk.stok, kategori.nama_kategori 
+$query = "SELECT produk.namaProduk, produk.image, produk.harga, produk.stok, kategori.nama_kategori 
 FROM produk 
 LEFT JOIN kategori ON produk.kategori_id = kategori.kategori_id 
 WHERE produk.kategori_id = $userId";
@@ -46,6 +46,7 @@ while ($post = mysqli_fetch_assoc($exec)) :
   <tr>
     <td><?= $index++; ?></td>
     <td><?= $post['namaProduk']; ?></td>
+    <td><?= $post['harga']; ?></td>
     <td><?= $post['stok']; ?></td>
     <td><?= $post['nama_kategori']; ?></td>
     <td>
