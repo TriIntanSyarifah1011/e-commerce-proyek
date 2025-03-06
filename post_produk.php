@@ -47,6 +47,10 @@ include '.includes/header.php';
 </select>
 </div>
 <!-- Textarea untuk deskripsi Produk -->
+<div class="mb-3">
+    <label for="content" class="form-label">Deskripsi</label>
+    <textarea class="form-control" id="content" name="content" required></textarea>
+</div>
 
 <!-- Tombol submit -->
  <button type="submit" name="simpan" class="btn btn-primary">Posting Produk</button>
