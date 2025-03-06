@@ -6,15 +6,11 @@
                   <script>
                     document.write(new Date().getFullYear());
                   </script>
-                  <a href="#" target="_blank" class="footer-link fw-bolder">SMKN 4 Tanjungpinang</a>.
-                  All rights reserved.
+                  <a href="#" target="_blank" class="footer-link fw-bolder">Kelompok E-commerce</a>.
+                  Kezia, Nurul, Intan.
                 </div>
                 <div>
-<<<<<<< HEAD
                   <a href="#" target="_blank" class="footer-link me-4">TIM E-COMMERCE</a>
-=======
-                  <a href="#" target="_blank" class="footer-link me-4">TIM RPL SMKN 4 Tanjungpinang</a>
->>>>>>> 50f7c452591da264ad053702564568bdfde6b38e
                 </div>
               </div>
             </footer>

@@ -1,48 +1,63 @@
 <?php include(".layouts/header.php"); ?>
-<!-- Register -->
+
+<!-- Login Card -->
 <div class="card">
   <div class="card-body">
-    <!-- Logo -->
     <div class="app-brand justify-content-center">
       <a href="index.html" class="app-brand-link gap-2">
-<<<<<<< HEAD
         <span class="app-brand-text demo text-uppercase fw-bolder">E-commerce</span>
       </a>
     </div>
-    <!-- /Logo -->
-    <h4 class="mb-2">Selamat datang di E-commerce!</h4>
-=======
-        <span class="app-brand-text demo text-uppercase fw-bolder">IdeKreatif</span>
-      </a>
-    </div>
-    <!-- /Logo -->
-    <h4 class="mb-2">Selamat datang di IdeKreatif! 👋</h4>
->>>>>>> 50f7c452591da264ad053702564568bdfde6b38e
-    <form class="mb-3" action="login_auth.php" method="POST">
+
+    <h4>Selamat Datang di E-commerce!</h4>
+
+    <form action="login_auth.php" method="POST">
       <div class="mb-3">
-        <label class="form-label">Username</label>
-        <input type="text" class="form-control" name="username"
-          placeholder="Enter your username" autofocus required />
+        <label id="labelUsername" class="form-label">Email</label>
+        <input type="text" class="form-control" name="username" id="username" 
+          placeholder="Masukkan Email" required autofocus />
       </div>
+
       <div class="mb-3 form-password-toggle">
-        <div class="d-flex justify-content-between">
-          <label class="form-label" for="password">Password</label>
-        </div>
+        <label class="form-label">Password</label>
         <div class="input-group input-group-merge">
           <input type="password" class="form-control" name="password"
-            placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
-            aria-describedby="password" />
+            placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" required />
           <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
         </div>
       </div>
+
       <div class="mb-3">
-        <button class="btn btn-primary d-grid w-100" type="submit">Masuk</button>
+        <label class="form-label">Login sebagai:</label>
+        <div>
+          <input type="radio" name="role" value="pelanggan" checked onclick="switchRole('pelanggan')"> Pelanggan
+          <input type="radio" name="role" value="admin" onclick="switchRole('admin')"> Admin
+        </div>
       </div>
+
+      <button class="btn btn-primary d-grid w-100">Masuk</button>
     </form>
+
     <p class="text-center">
-      <span>Belum punya akun?</span><a href="register.php"><span> Daftar</span></a>
+      <span>Belum memiliki akun?</span><a href="register.php"><span> Daftar </span></a>
     </p>
   </div>
 </div>
-<!-- /Register -->
+
 <?php include(".layouts/footer.php"); ?>
+
+<!-- JavaScript untuk Ubah Input -->
+<script>
+  function switchRole(role) {
+    var label = document.getElementById("labelUsername");
+    var input = document.getElementById("username");
+
+    if (role === "admin") {
+      label.innerText = "Username";
+      input.placeholder = "Masukkan Username";
+    } else {
+      label.innerText = "Email";
+      input.placeholder = "Masukkan Email";
+    }
+  }
+</script>
