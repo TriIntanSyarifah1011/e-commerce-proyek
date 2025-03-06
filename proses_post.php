@@ -14,6 +14,7 @@ if (isset($_POST['simpan'])) {
     $postProduk = $_POST["post_produk"]; // Nama produk
     $harga = $_POST["harga"]; // Harga Produk
     $stok = $_POST["stok"]; // Stok Produk
+    $deskripsi = $_POST["deskripsi"]; // Konten postingan
     $kategoriId = $_POST["kategori_id"]; // ID kategori
 
     // Mengatur direktori penyimpanan file gambar
@@ -27,7 +28,7 @@ if (isset($_POST['simpan'])) {
         // Jika unggahan berhasil, masukkan data postingan produk ke dalam database
         $query = "INSERT INTO produk (namaProduk, 
         harga, stok, image, kategori_id, admin_id) VALUES
-        ('$postProduk', '$harga', '$stok', '$imagePath', '$kategoriId', '$adminId', NOW())";
+        ('$postProduk', '$harga', '$stok', '$deskripsi', NOW(), $kategoriId, $adminId, '$imagePath')";
 
         if ($conn->query($query) === TRUE) {
             // Notifikasi berhasil jika postingan produk berhasil ditambahkan
@@ -88,6 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update'])) {
     $postProduk = $_POST["post_produk"];
     $harga = $_POST["harga"];
     $stok = $_POST["stok"];
+    $deskripsi = $_POST["deskripsi"]; // Konten postingan
     $kategoriId = $_POST["kategori_id"];
     $imageDir = "assets/img/uploads/"; // Direktori penyimpanan gambar
 
@@ -117,7 +119,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update'])) {
 
 // Update data postingan di database
 $queryUpdate = "UPDATE produk SET namaProduk = '$postProduk',
-harga = '$harga', stok = '$stok', kategori_id = $kategoriId,
+harga = '$harga', stok = '$stok', deskripsi = '$deskripsi', kategori_id = $kategoriId,
 image = '$imagePath' WHERE produk_id = $produkId";
 
 if ($conn->query($queryUpdate) === TRUE) {
